@@ -1,0 +1,20 @@
+#ini berawal dari saya mau install virtualbox di kali rolling 2016.2 ,, dan tidak berhasil
+kemudian saya mencoba install virtualbox .deb malah ada kendala di kernel
+
+kemudian saya melakukan searching muter-muter google dan melakukan uji coba dan hasil berhasil dan solved
+
+
+download file-filenya di http.kali.org/kali/pool/main/l/linux/
+
+kemudian lakukan penginstalan dari yang pertama hingga akhir
+
+dpkg -i /Download/kernel/linux-kbuild-4.6_4.6.4-1kali1_amd64.deb
+dpkg -i /Download/kernel/linux-headers-4.6.0-kali1-common-rt_4.6.4-1kali1_amd64.deb
+dpkg -i /Download/kernel/linux-headers-4.6.0-kali1-rt-amd64_4.6.4-1kali1_amd64.deb
+dpkg -i /Download/kernel/linux-headers-4.6.0-kali1-common_4.6.4-1kali1_amd64.deb
+dpkg -i /Download/kernel/linux-headers-4.6.0-kali1-amd64_4.6.4-1kali1_amd64.deb
+dpkg -i /Download/kernel/linux-headers-4.6.0-kali1-all-amd64_4.6.4-1kali1_amd64.deb
+
+jika sudah silahkan dicoba untuk menginstall virtualbox,, dan hasilnya it's work !!
+
+#masalah ini mungking bisa juga saat melakukan dist-upgrade menjadi kernel 4.8.0 dan ingin mengembalikan ke kernel 4.6.0
